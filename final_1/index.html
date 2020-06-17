@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<!--滑動特效-->
+<script src="jquery-1.6.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+</head>
+<body>
+	<!--home page-->
+	<div class="homePage">
+		<img class="p_hp" src="p_hp3.jpg">
+		<div class="hp_word">
+			<img src="p_hpword.png">
+		</div>
+		<div id="btn_hp"><a href="#fastFashion">learn more</a></div>
+		
+	</div>
+	
+	<!--navBar-->
+	<div id="navBar" class="col-12 navHide" >
+		<h2>from Fast to Slow</h2>
+	</div>
+	<!--language-->
+	<div class="version ">
+		<a href="test_en.html">English.</a>
+	</div>
+	<!--ff-->
+	<div id="part_ff" data-target="fast"><!-- 讓observer抓 -->
+	<section>
+		<div id="fastFashion">fast fashion</div><!--讓按鈕抓的到頁面的tag--> 
+		<div class="col-6 ">
+			<!--page title-->
+			<div class="row container1">
+				<p class="pageTitle">- Fast Fashion -</p>
+			</div>
+			<!--picture-->
+			<div class="row container2">
+				<p class="kfc">What is Fast Fashion?</p>
+				<img src="FF1.svg" height="300">
+			</div>
+		</div>	
+		<div class="col-6 container_ff1">
+				<div class="row container3">
+					<p>
+						 2006年，國際時尚趨勢研究中心發佈“快速、時尚”將成為未來十年服裝行業的發展趨勢。快時尚主要具有四個特點，包括快速提供當下流行的款式和元素，以低價、款多、量少為特點，激發消費者的興趣，最大限度地滿足消費者需求。可以說快時尚是全球化、民主化、年輕化和網路化這四大社會潮流共同影響下的產物。
+					</p>
+				</div>
+
+		</div>
+	</section>
+	<!--ff brand-->
+	<section>
+		<div class="row container1  ">
+				<p class="kfc">Brands of Fast Fashion</p>
+		</div>
+		<div class="map_instruction">請點擊地圖看看有哪些國家有快時尚企業</div>
+		<div class="col-6 ">
+			<!--page title-->
+			<div class="flex-container">
+		        <div class="width-adjustment">
+		            <div style="height: 100%;">
+		                <div data-src="pctgn-df873c27"><script src="https://pictogon.com/js/pictogon.min.js"></script>
+		                </div>
+		            </div>
+		        </div>  
+		    </div>
+			
+	</section>
+	<!--ff influence-->
+	<section>
+			<div class="row container1 ">
+				<p class="kfc">The Impact of Fast Fashion</p>
+			</div>
+			
+				<div class="sliderShow ">
+	  
+					<div class="slides">
+					    <input type="radio" name="r" id="r1" checked>
+					    <input type="radio" name="r" id="r2">
+					    <input type="radio" name="r" id="r3">
+					    <input type="radio" name="r" id="r4">
+					    <div class="slide s1">
+					    	<div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_ideas.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		快時尚品牌與社群平台的興起，影響了整個時尚界的生態。失速的生產週期一昧追求快速，只重「量」卻不重「質」，犧牲了創意與最重要的「精神價值」，使時尚流於表面，失去其靈魂與特色。而快時尚品牌之所以能在極短的時間內推陳出新，是因為他們並非流行與時尚的原創者，僅是下游的模仿者。<br><br>雖然近年來抄襲大品牌的案件層出不窮，但新聞似乎對這些品牌的影響甚微，非但沒有引起社會大眾對問題的正視，快時尚品牌甚至還持續獲得比原創者更高的利益。<br><br>若這樣的現象遲遲沒有改善，願意創作的人只會越來越少，那麼快時尚，甚至購買快時尚的普羅大眾，不就成為了扼殺創意的元凶？
+					        	</p>
+					        </div>
+
+					     </div>
+					    <div class="slide">
+					       <div class="col-5 plz " style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_trash.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		服裝製造過程中需要消耗大量的水資源，例如：種植出製作一件牛仔褲所需的棉花，就要耗費大約8506公升、足以讓人淋浴122次的水量，但這僅是其中的一小部分而已。後續在染整廠，光是70萬碼（約64萬公尺）的布，就需要用掉將近315萬公升的水，相當驚人。而目前中國、印度等主要的棉花種植與服裝生產國，已面臨缺水問題，預估2030年用水量會增加50％，屆時可能連飲用水都面臨匱乏。
+					        		<br><br>
+									除了消耗大量水資源，服裝製造過程的用電量也不小，以織一噸棉布料為例，需要使用6萬5000千瓦的電力，若以一般人一個月用電約350度換算，染整一小時的用電量，即可供應約1800個家庭使用。
+
+					        	</p>
+					        </div>
+					     </div>
+					      
+					    <div class="slide">
+					        <div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_destory.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		快時尚真正的意義並非「時尚」，而是意味著「快速取代」；它們不是因為「需要」而購買，反而是因為「誘惑」而掏錢。根據統計，美國一年約有1280萬噸的服裝垃圾，被運往垃圾場掩埋，這些大量的廢棄衣物不僅造成可觀的碳排放量，而且難以被分解，產生的有毒化學染料，更會汙染土壤和地下水，造成的環境危害實在不容忽視。即使將這些快時尚衣物丟到舊衣回收箱，多數的下場也是散落在垃圾場中，而非送到有需要的人身上，因為它們太過不實用了。
+
+					        	</p>
+					        </div>
+				        </div>
+
+					    <div class="slide">
+					       <div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_labor.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		快時尚讓人們能以低廉價格享受流行的背後，卻是犧牲勞工權益的剝削與無奈。
+					        		<br><br>
+									根據統計，全球約有7500萬人從事服裝製造業大多數人一天賺不到3美元，連維持基本的溫飽都有很大的困難。但更糟的是，許多工廠為了趕上大企業的訂單、加快生產流程，違法雇用未滿法定工作年齡的童工。根據聯合國兒童基金會和國際勞工組織統計，目前全世界約有1.7億兒童在服裝產業工作，這些孩子因貧困而被迫輟學，成為快時尚系統中的一環並飽受壓榨。
+					        	</p>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="select">
+						    <label for="r1" class="selectBar active"></label>
+						    <label for="r2" class="selectBar"></label>
+						    <label for="r3" class="selectBar"></label>
+						    <label for="r4" class="selectBar"></label>
+				</div>
+		
+	</section>
+	</div>
+	<!--what is sf?-->
+	<div id="part_sf" data-target="slow"><!-- 讓observer抓 -->
+	<section>
+		
+		<div class="col-7" id="h100">
+			<div class="row container_s1 ">
+				<p id="slowFashion" class="pageTitle">- Slow Fashion -</p>
+				<p class="kfc" style="transform: translate(0px, 27px);">What is Slow Fash?</p>
+			</div>
+			<div class="row content_s1"> <!--我這段需要置中-->
+				<p style="transform: translateY(-10%);">
+				慢時尚<span class="content_eng">（slow fashion）</span>，是一種永續<span class="content_eng">（Sustainable）</span>的時尚理念，所謂的「慢」並不是指速度的快慢，而是指相較於快時尚大量生產製造、市場週期短的服飾，慢時尚注重品質與細節、耐穿、款式經典又百搭，同時也關注一件衣服背後的製造過程與來歷。
+				<br><br>
+				慢時尚服飾多為可再生、對環境友善的材質；生產過程不剝削勞工，並實踐公平交易；不大量製造，凸顯衣物本身與設計獨一無二的價值；設計經典又耐穿，同時不失風格，讓穿著者仍保有個人特色。
+				<br><br>
+				慢時尚強調好的材質、合理的價格，結合環保意識；讓每件衣服發揮它最大的價值，而不是「穿過即丟」的資源浪費。
+				</p>
+			</div>
+		</div>
+		<div class="col-5 what_sf_pic_container">
+			<img src="picture_sf1.jpg" class="what_sf_pic"><!--圖片如何自適div大小-->
+		</div>
+	</section>
+	<!--Why sf?-->
+	<section>
+		<div class="col-7" id="h100">
+			<div class="row why_sf_title ">
+				<p class="kfc">Why is Slow Fashion?</p>
+			</div>
+			<div class="row why_sf_content">
+				<p ><!--我這段需要置中-->
+				慢時尚的核心價值即為永續時尚<span class="content_eng">（sustainable fashion）</span>與道德時尚<span class="content_eng">（ethical fashion）</span>。熱愛時尚，但我們不該將環境、動物與勞工作為流行的代價。
+				<br><br>
+				慢時尚讓永續不再只是理念，而是從生產過程、市場消費到穿上衣服的那一刻，都貫徹到底的實踐。
+				<br><br>
+				強調品質的慢時尚服飾，背後代表的是全球成衣市場的公平交易、環保生產、永續發展的可能與解決之道。
+				<br><br>
+				所以，請你慢下來，與我們一起重新感受衣服的美好，為自己也為全球環境盡一份心。
+				</p>
+			</div>
+		</div>
+		
+		<div class="col-3 plz bg_function">
+			<div class="row function_for_sf">
+				''Sustainable fashion<br>+<br>Ethical fashion<br>=<br>Slow fashion''
+			</div>
+		</div>
+		<div class="col-1"></div>
+	</section>
+	<!--how to sf-->
+	<section>
+		<div class="row container_s1 ">
+			<p class="kfc">How to Slow Fashion?</p>
+		</div>
+		<div class="col-12 content_s2" >
+			<!--衣櫃必備單品-->
+			<div id="modalBtn_a" class="col-2 picture_container_s">
+				<img src="p_mustHave.jpg" width="100%" height="100%">
+
+				<div class="picture_s">
+					<P>衣櫃必備單品</P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_a" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span  class="close_a">&times;</span>
+			    <div class="col-4" style="height: 100%;">
+
+			    	<img src="p_mustHave_1.jpg" height="100%" width="auto">
+			    </div>
+			    <div class="col-7 modal_content_container plz">
+			    	<p>什麼是衣櫃必備單品？時尚潮流變化莫測，盲目追隨潮流反而容易失去個人特色，只有經典款式能夠永久不衰。除了簡單的素<span class="content_eng">T</span>、牛仔褲以外，根據你的個人風格，找出自己最適合的款式，決定妳衣櫃裡不可或缺的元素是什麼，融入個人特色的經典服飾，就是屬於你的必備單品！</p>
+			    </div>
+			  </div>
+			</div>
+			<!--重複穿搭-->
+			<div id="modalBtn_c" class="col-2 picture_container_s">
+				<img src="P_repeat.jpg" width="100%" height="100%">
+				<div class="picture_s " >
+					<P class='picture_s_w'>重複穿搭</P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_c" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span class="close_c">&times;</span>
+			    <div class="col-6 plz" style="height: 100%; display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/ background-color: #ceb6b9;">
+			    	
+			    	<iframe width="100%" height="315" src="https://www.youtube.com/embed/Z2btCqHejx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    	
+			    </div>
+			    <div class="col-5 modal_content_container plz">
+			    	<p>常常看著滿山滿谷的衣櫃卻覺得自己沒有衣服可以穿嗎？這大概是大部分人的日常煩惱。衣服明明很多，卻常常不知道該穿什麼，因此又買了更多的衣服回家，無形中造成了不必要的浪費。<br><br>
+					其實，一件實穿的單品可以給你百變的造型，重複穿搭一點也不無聊，搭配不同飾品與配件，便能夠展現多元的個人風格。試著在每天的造型上發揮個人創意吧！
+				</p>
+			    </div>
+			  </div>
+			</div>
+			<!--重質不重量-->
+			<div id="modalBtn_b" class="col-2 picture_container_s">
+				<img src="p_qQ.jpg" width="100%" height="100%">
+				<div class="picture_s">
+					<P>重質不重量</P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_b" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span class="close_b">&times;</span>
+			    <div class="col-4" style="height: 100%;">
+			    	<img src="p_qQ_1.jpg" height="100%" width="auto">
+			    </div>
+			    <div class="col-7 modal_content_container plz">
+			    	<p>需要＞想要<br>
+					不過度購買衣物，每次買衣服前，先想一想：我真的需要這件衣服嗎？我是不是已經有類似款式了？我會很常穿這件衣服嗎？三思後做出最終決定！千萬不要敗給了衝動魔鬼，最後買了衣服卻塞在衣櫃最底層，一次也沒拿出來穿。<br><br>
+					量＞質<br>
+					與其購買大量便宜但品質不那麼好、拋棄率較高的衣物，我們建議購買質感與設計感兼具的服飾，雖然價格可能較高，但長遠來看，不僅能省下不必要的浪費，也能減少對環境帶來的廢棄衣物負擔。透過穿搭技巧，搭配質感衣物，能夠穿出更具特色的個人風格。
+				</p>
+			    </div>
+			  </div>
+			</div>
+		</div>	
+	</section>
+	</div>
+	<!--for spirit-->
+	<div id="part_sp" data-target="spirit"><!-- 讓observer抓 -->
+	<section>
+		<div class="row container_s1 ">
+				<p id="spiritFashion" class="pageTitle">- Our Spirit -</p>
+		</div>
+		<div class="container_spirit ">
+			<img src="p_spirit.svg" class="background_spirit">
+			<p class="pageTitle content_spirit">" Less is More.<br>From Fast to Slow. "</p>
+		</div>
+	</section>
+	</div>
+	<!--about us-->
+	<div id="part_au" data-target="about">
+		<section>
+		<div class="row container_s1 ">
+				<p id="aboutFashion" class="pageTitle">- About Us -</p>
+		</div>
+		<div class="col-6 ">
+			<!--picture-->
+			<div class="row container2">
+				<img src="p_abtus.png" height="300" style="margin-top: 100px;">
+			</div>
+		</div>	
+		<div class="col-6 container_au">
+				<div class="row container_auu">
+					<p>
+						 五個來自交通大學傳播與科技學系的大二生，熱愛時尚也關心環保。一開始我們只是純粹煩惱衣櫃總是爆滿，但是卻常常不知道該穿什麼的問題，希望可以藉由二手衣物買賣，延續衣物本身價值。在苦惱的同時，我們逐漸開始反思，究竟為什麼人人都會有衣櫃爆滿的困擾？如果所有人的衣櫃都已經爆滿，那還需要大量製造衣物嗎？而不斷製造與丟棄衣服的過程中，我們又造成了多大的浪費？有沒有辦法改善這個問題，且不限於個人，而是改善整體社會共同的困擾？
+						 <br><br>
+						思考解決辦法與搜尋資料之際，我們發現了人類每年的廢棄衣物造成了多大的時尚浪費，對於環境又是多大得負擔。更因此發現了「慢時尚」這個理念，在時尚與永續之間，我們看到了取得平衡的可能。
+						<br><br>
+						因此！我們致力於瞭解每件衣服背後的生產故事，相信「慢時尚」不僅僅是購買衣物時的一種選擇，更可以是一種生活方式，是一種人人都該有的時尚態度！
+						<br><br>
+						透過推廣「慢時尚」，我們想帶給人們更好的衣物及生活品質，同時也為環境省下不必要的浪費。藉由理念的傳遞，讓「慢時尚」成為改變世界的力量！
+						<br><br>
+						所以請你慢下來，與我們一起重新感受衣服最純粹的美好！
+
+					</p>
+				</div>
+
+		</div>
+	</section>
+	</div>
+	<!--side bar-->
+
+	<div class="li_sideBar sideHide" id="sideBar">
+		<ul>
+			<li><a href="#fastFashion" id="fast">Fast Fashion.</a></li>
+			<li><a href="#slowFashion" id="slow">Slow Fashion.</a></li>
+			<li><a href="#spiritFashion" id="spirit">Our Spirit.</a></li>
+			<li><a href="#p4" id="about" style="color: #717273;">About Us.</a></li>
+		</ul>
+		
+	</div>
+	<!-- icon bar -->
+	<div id="icon_bar" class="iconHide">
+		<div class="card">
+		<a href="#"><img src="p_fb0.png"><img src="p_fb.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="#"><img src="p_ins0.png"><img src="p_ins.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="#"><img src="p_twitter0.png"><img src="p_twitter.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="#"><img src="p_whatapps0.png"><img src="p_whatapps.png" class="icon_hover"></a>
+		</div>
+	</div>
+	
+</body>
+<!--get external javascript-->
+<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="sideBar.js"></script>
+<!--modal controller-->
+<script type="text/javascript" src="modal.js"></script>
+<!--get aos js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+	AOS.init();
+</script>
+</html>
