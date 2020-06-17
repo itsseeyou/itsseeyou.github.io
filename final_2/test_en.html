@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<!--滑動特效-->
+<script src="jquery-1.6.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test_en</title>
+<link rel="stylesheet" type="text/css" href="test.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+</head>
+<body>
+	<!--home page-->
+	<div class="homePage">
+		<img class="p_hp" src="p_hp3.jpg">
+		<div class="hp_word">
+			<img src="p_hpword.png">
+		</div>
+		<div id="btn_hp"><a href="#fastFashion">learn more</a></div>
+		
+	</div>
+	
+	<!--navBar-->
+	<div id="navBar" class="col-12 navHide" >
+		<h2>from Fast to Slow</h2>
+	</div>
+	<!--language-->
+	<div class="version ">
+		<a href="index.html">Chinese.</a>
+	</div>
+	
+	<!--ff-->
+	<div id="part_ff" data-target="fast"><!-- 讓observer抓 -->
+	<section>
+		<div id="fastFashion">fast fashion</div><!--讓按鈕抓的到頁面的tag--> 
+		<div class="col-6 ">
+			<!--page title-->
+			<div class="row container1">
+				<p class="pageTitle">- Fast Fashion -</p>
+			</div>
+			<!--picture-->
+			<div class="row container2">
+				<p class="kfc">What is Fast Fashion?</p>
+				<img src="FF1.svg" height="300">
+			</div>
+		</div>	
+		<div class="col-6 container_ff1">
+				<div class="row container3">
+					<p>
+						 In 2006, the International Fashion Trend Research Center announced that "fast and fashionable" will become the development trend of the clothing industry in the next ten years. Fast fashion has four main characteristics, including the rapid provision of popular styles and elements, low prices, large models, and small quantities, to stimulate consumer interest and maximize consumer demand. It can be said that fast fashion is a product of the four social trends of globalization, democratization, youth and the Internet.
+					</p>
+				</div>
+
+		</div>
+	</section>
+	<!--ff brand-->
+	<section>
+		<div class="row container1  ">
+				<p class="kfc">Brands of Fast Fashion</p>
+		</div>
+		<div class="map_instruction">Please click on the map to see which countries have fast fashion companies.</div>
+		<div class="col-6 ">
+			<!--page title-->
+			<div class="flex-container">
+		        <div class="width-adjustment">
+		            <div style="height: 100%;">
+		                <div data-src="pctgn-df873c27"><script src="https://pictogon.com/js/pictogon.min.js"></script>
+		                </div>
+		            </div>
+		        </div>  
+		    </div>
+			
+	</section>
+	<!--ff influence-->
+	<section>
+			<div class="row container1 ">
+				<p class="kfc">The Impact of Fast Fashion</p>
+			</div>
+			
+				<div class="sliderShow ">
+	  
+					<div class="slides">
+					    <input type="radio" name="r" id="r1" checked>
+					    <input type="radio" name="r" id="r2">
+					    <input type="radio" name="r" id="r3">
+					    <input type="radio" name="r" id="r4">
+					    <div class="slide s1">
+					    	<div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_ideas.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		The rise of fast fashion and social media have affected the whole fashion industry. This fast product launching pace of fast fashion focus only on "quantity" but "quality". The sacrifice of creativity alone with the most importantly "spiritual value" has made fashion something superficial, losing its soul and its unique feature. The key reason for the fast product changing pace in fast fashion is that the manufacturer of these trendy clothes is usually not the original creator of the trend but just the copier. Although in recent years, the case of plagiarism from famous brands has always been reported, the news seems still barely affects it. Far from raising the awareness of plagiarism to the society, fast fashion brands even profit more than the original creators. If this kind of situation is not improving, the creator will surely decrease. Though, fast fashion even customers would become the killer of creativity.
+					        	</p>
+					        </div>
+
+					     </div>
+					    <div class="slide">
+					       <div class="col-5 plz " style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_trash.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		The manufacturing process inevitably costs natural resources and leads to unnecessary wastes.For instance, to plant a sufficient amount of Cotton for one jean can cost up to 8506 liter of water, which is enough for a person to shower 122 times. However, this is just a little part of the wast. Afterward, the coloring process would cost up to 640 thousand kilometers of fabric and 3.15 million liters of water, which is quite astonishing. Nowadays in counties like China, India, and so on, where cotton and clothes majorly come from, have faced the problem of lacking water. It is estimated that in 2030 the need for water would increase by 50%, which could even lead to a lack of drinking water.
+					        		<br><br>
+									 In addition to the huge amount of water consumption, the electricity required for clothing production is also not ignorable. The weaving process of one-tonne cotton fabric would take up to 6.5 thousand kilowatts. The normal usage of electricity for one person per month is 350 kilowatt a month, which means an hour of the process would provide the usage for 1800 families.
+					        </div>
+					     </div>
+					      
+					    <div class="slide">
+					        <div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_destory.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		The true essence of fast fashion is not fast "fashion" but fast "replacement". Customers do not purchase out of "needs" but "temptation ". According to statistics, in the US there are up to 12.80 million tonnes of clothing dispositions which ends up in landfills. These clothing dispositions not only cause considerable amounts of carbon pollution but is also difficult to be decomposed, which lead to the pollutions of soil and underground water, causing nonnegligible environmental damage. 
+					                Even if these fast fashion clothes were abandoned in the recycling box, most of them still end up in landfills instead of sending them to those in need on account of the low quality and durability of these clothes.
+					        	</p>
+					        </div>
+				        </div>
+
+					    <div class="slide">
+					       <div class="col-5 plz" style="display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/">
+					        <img src="p_labor.svg">
+					        </div>
+					        <div class="col-7 plz ff_impact">
+					        	<p >
+					        		The secret behind the low price of fast fashion is the sacrifice of labor rights. 
+					        		<br><br>
+									On April 24th, 2013, the Rana Plaza building in Dhaka Bangladesh fell, and 1134 people were killed in it. These victims were mostly females and child laborers who worked for these low payment clothing factories. 
+					        	</p>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="select">
+						    <label for="r1" class="selectBar active"></label>
+						    <label for="r2" class="selectBar"></label>
+						    <label for="r3" class="selectBar"></label>
+						    <label for="r4" class="selectBar"></label>
+				</div>
+		
+	</section>
+	</div>
+	<!--what is sf?-->
+	<div id="part_sf" data-target="slow"><!-- 讓observer抓 -->
+	<section>
+		
+		<div class="col-7" id="h100">
+			<div class="row container_s1 ">
+				<p id="slowFashion" class="pageTitle">- Slow Fashion -</p>
+				<p class="kfc" style="transform: translate(0px, 27px);">What is Slow Fash?</p>
+			</div>
+			<div class="row content_s1"> <!--我這段需要置中-->
+				<p style="transform: translateY(-10%);">
+				Slow fashion is the idea of making fashion sustainable. The word "slow" in this phrase doesn't literally refer to the pace of speed. Instead, it is about the focus on clothing quality, durability, and all-match features comparing with "fast" fashion, which is usually produced massively and has a seasonal marketing strategy.
+				<br><br>
+				In addition to using renewable and eco-friendly ingredients for production, slow fashion clothes are usually produced in an ethical way. Practicing fair trade while having no exploitation of laborers nor mass production, slow fashion showed the unique value of garments itself. Moreover, slow fashion clothes feature basic and simple designs that will never fall out of trend and could let you shine on your own style while being eco-friendly at the same time.
+		
+				</p>
+			</div>
+		</div>
+		<div class="col-5 what_sf_pic_container">
+			<img src="picture_sf1.jpg" class="what_sf_pic"><!--圖片如何自適div大小-->
+		</div>
+	</section>
+	<!--Why sf?-->
+	<section>
+		<div class="col-7" id="h100">
+			<div class="row why_sf_title ">
+				<p class="kfc">Why is Slow Fashion?</p>
+			</div>
+			<div class="row why_sf_content">
+				<p ><!--我這段需要置中-->
+				The core of slow fashion is a combination of sustainable fashion and ethical fashion. With our passion for fashion, we surely have no reason to let our eco-system and laborers fall into the victims of fashion trends.
+				<br><br>
+				Slow fashion makes sustainable fashion more than just an idea, but the true practice from clothing production to marketing till the moment you put it on.
+				<br><br>
+				With the focus of high-quality clothes, the true meaning behind the phrase "slow fashion" are the ways to make fair trade, eco-production, and sustainable development all come true.
+				<br><br>
+				Therefore, please "slow" down with us. Feel the true beauty of clothes while making an effort for the environment.
+				</p>
+			</div>
+		</div>
+		
+		<div class="col-3 plz bg_function">
+			<div class="row function_for_sf">
+				''Sustainable fashion<br>+<br>Ethical fashion<br>=<br>Slow fashion''
+			</div>
+		</div>
+		<div class="col-1"></div>
+	</section>
+	<!--how to sf-->
+	<section>
+		<div class="row container_s1 ">
+			<p class="kfc">How to Slow Fashion?</p>
+		</div>
+		<div class="col-12 content_s2" >
+			<!--衣櫃必備單品-->
+			<div id="modalBtn_a" class="col-2 picture_container_s">
+				<img src="p_mustHave.jpg" width="100%" height="100%">
+
+				<div class="picture_s">
+					<P>Must-have item</P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_a" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span  class="close_a">&times;</span>
+			    <div class="col-4" style="height: 100%;">
+
+			    	<img src="p_mustHave_1.jpg" height="100%" width="auto">
+			    </div>
+			    <div class="col-7 modal_content_container plz">
+			    	<p>As unpredictable as a fashion trend is, blind following it will only cost you your own unique style. In these constantly changing fashion trends, only simple and classic items could last long. In addition to plain T-shirts and jeans, must-have items that are the simply designed pieces that fit you the most base on your own style.</p>
+			    </div>
+			  </div>
+			</div>
+			<!--重複穿搭-->
+			<div id="modalBtn_c" class="col-2 picture_container_s">
+				<img src="P_repeat.jpg" width="100%" height="100%">
+				<div class="picture_s " >
+					<P class='picture_s_w'>OOTDS(outfit of these days)</P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_c" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span class="close_c">&times;</span>
+			    <div class="col-6 plz" style="height: 100%; display: flex;justify-content: center;flex-direction: column;height: 100%;/*高度是他父元素的100%*/ background-color: #ceb6b9;">
+			    	
+			    	<iframe width="100%" height="315" src="https://www.youtube.com/embed/Z2btCqHejx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    	
+			    </div>
+			    <div class="col-5 modal_content_container plz">
+			    	<p>Have you ever stare at piles of clothes but feel like having nothing to wear? This is probably the daily description of many of us.  With enormous clothes but not knowing what to wear, so people just buy, again and again, causing unnecessary waste on clothes.<br><br>
+					However, the truth is even one simple item could give you hundreds of fashionable looks. Therefore, repeat OOTD is not boring at all! With different accessories, there's a high chance that you can be creative and create your unique style on your everyday outfits.
+				</p>
+			    </div>
+			  </div>
+			</div>
+			<!--重質不重量-->
+			<div id="modalBtn_b" class="col-2 picture_container_s">
+				<img src="p_qQ.jpg" width="100%" height="100%">
+				<div class="picture_s">
+					<P>Quality>quantity </P>
+				</div>
+			</div>
+			<!-- The Modal -->
+			<div id="myModal_b" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal_content">
+			    <span class="close_b">&times;</span>
+			    <div class="col-4" style="height: 100%;">
+			    	<img src="p_qQ_1.jpg" height="100%" width="auto">
+			    </div>
+			    <div class="col-7 modal_content_container plz">
+			    	<p>Needed > wanted<br>
+					Stop over purchasing clothes! Here are the questions you need to consider before making a purchase. Do I really need it? Do I have similar ones? Will I constantly wear it? Just think before you leap! Don't fall into the devil of impulse, and find that the clothes you bought just end up lying at the bottom of your wardrobes without wearing even once.<br><br>
+					Quality>quantity <br>
+					Instead of buying cheap, low quality, high disposable rate clothes, we recommend more expensive but high quality and well-designed ones. In a long-term perspective, it not only saves unnecessary waste but also lessens environmental burdens for disposing of clothes.
+				</p>
+			    </div>
+			  </div>
+			</div>
+		</div>	
+	</section>
+	</div>
+	<!--for spirit-->
+	<div id="part_sp" data-target="spirit"><!-- 讓observer抓 -->
+	<section>
+		<div class="row container_s1 ">
+				<p id="spiritFashion" class="pageTitle">- Our Spirit -</p>
+		</div>
+		<div class="container_spirit ">
+			<img src="p_spirit.svg" class="background_spirit">
+			<p class="pageTitle content_spirit">" Less is More.<br>From Fast to Slow. "</p>
+		</div>
+	</section>
+	</div>
+	<!--about us-->
+	<div id="part_au" data-target="about">
+		<section>
+		<div class="row container_s1 ">
+				<p id="aboutFashion" class="pageTitle">- About Us -</p>
+		</div>
+		<div class="col-6 ">
+			<!--picture-->
+			<div class="row container2">
+				<img src="p_abtus.png" height="300" style="margin-top: 100px;">
+			</div>
+		</div>	
+		<div class="col-6 container_au">
+				<div class="row container_auu">
+					<p>
+						 We are five students from the Department of Communication and Technology of NCTU, who love fashion and care about the environment. At the beginning, we were just worried that our wardrobe is always full, but we always don't know what to wear. Hoping that through the sell of second-hand clothing, the value of the clothing itself can be continued. While distressed, we gradually began to reflect on, why is everyone troubled with full wardrobes? If everyone's wardrobe is full, do we still need to make a lot of clothes? And in the process of continuously manufacturing and discarding clothes, how much waste have we caused? Is there a way to improve this problem, which is not limited to individuals, but to improve the common problems of the whole society?
+						 <br><br>
+						When thinking about solutions and searching for information, we found out how much fashion waste was caused by human waste clothes every year, and how much it harm the environment. Therefore, we discovered the concept of "slow fashion". Between fashion and sustainability, we saw a possibility of achieving a balance.
+						<br><br>
+						Therefore, We are committed to understanding the story behind each piece of clothing production and believe that "slow fashion" is not only a choice when buying clothes, but also a way of life It is a fashion attitude that everyone should have!
+						<br><br>
+						By promoting "slow fashion", we want to bring people better clothes and quality of life, while also saving unnecessary waste for the environment. Through the transmission of ideas, let "slow fashion" become the power to change the world!
+						<br><br>
+						So please slow down and experience the purest beauty of the clothes with us!
+
+					</p>
+				</div>
+
+		</div>
+	</section>
+	<footer class="bottomit">	
+	<!-- footer -->
+	<div class="footer ">
+		<!-- 左 -->
+		<div class="col-4">
+			<div class="ft_title">
+				<p>About Us</p>
+			</div>
+			<div class=" ft_center">
+			<div id="ft_modalBtn" class="ft_abtus ft_modal">
+				<img src="53.png" width="80%" height="auto" >			
+			</div>		
+			</div>
+			<!-- ft modal -->
+			<div id="ft_modal" class="modal">
+				<!-- ft modal content -->
+			<div class="modal_content">
+				<span  class="ft_close">&times;</span>
+				<div class="  col-5 ft_100 ">
+	       	
+			       	<div class=" col-12 ft_iwannadie">
+			        <img src="seeyou-01.png" width="30%" height="auto" class="About-Us-Image">
+			        <p class="ft_gohellplz">工程部總監　施奕如</p>
+			        <p class="shortwords">「好累花好久時間」<br>
+			        請打：1925</p>
+			        </div>
+		        
+			        <div class=" col-12 ft_iwannadie">
+			        <img src="me-01.png" width="30%" height="auto" class="About-Us-Image">
+			        <p class="ft_gohellplz">庶務部總監　陳嶸</p>
+			        <p class="shortwords">「我向台下的各位同學宣布，明年只能三個人一組！」</p>
+			        </div>
+			    </div>
+
+       			<div class=" col-5 ft_100">
+			       	<div class="col-12 ft_iwannadie">
+			        <img src="amberkiki-01.png" width="30%" height="auto" class="About-Us-Image">
+			        <p class="ft_gohellplz">內容部總監　鄭惠心</p>
+			        <p class="shortwords">「喵喵喵 喵 喵喵喵喵 喵喵喵喵 喵喵 喵 喵喵喵」<br>徵公，會疼會養，要能容忍脫序行為。</p>
+			       </div>
+	   		
+			       <div class="col-12 ft_iwannadie">
+			        <img src="amber.png" width="30%" height="auto" class="About-Us-Image">
+			        <p class="ft_gohellplz">翻譯總監　王湘瑜</p>
+			        <p class="shortwords">沒啥想說的</p>
+			       </div>
+				</div>
+			</div>
+			</div>				
+		</div>
+		<!-- 中 -->
+		<div class="col-4">
+			<div class="ft_title">
+				<p>Related Links</p>
+			</div>
+			<div class="col-12 ft_fkoff">
+				<div class="col-4 ft_center " >
+					
+					<a href="https://undraw.co/" target="_blank" class="ft_logo"><img src="undraw.png"width="100%" height="auto">
+					<a href="https://pictogon.com/" target="_blank" class="ft_logo"><img src="pictogon.png"width="100%" height="auto"></a>	
+				</div>
+				<div class="col-4 ft_center " >
+					<a href="https://www.gap.tw/" target="_blank" class="ft_logo"><img src="gap.png"width="100%" height="auto"></a>
+					 <a href="http://spao.elandmall.com/" target="_blank" class="ft_logo"><img src="spao.png"width="100%" height="auto"></a>
+					  <a href="http://www.inditex.com/" target="_blank"class="ft_logo"><img src="inditex.png"width="100%" height="auto" ></a>
+				</div>
+				<div class="col-4 ft_center" >
+					
+					 
+					  <a href="https://www2.hm.com/en_asia3/index.html" target="_blank" class="ft_logo"><img src="hm.png"width="100%" height="auto"></a>
+					  <a href="https://www.so-nice.com.tw/" target="_blank" class="ft_logo"><img src="sonice.png"width="100%" height="auto"></a>
+					  
+				</div>		
+			</div>			
+		</div>
+		<!-- 右 -->
+		<div class="col-4 ft_center">
+			<div class="ft_title">
+				<p>Contact Us</p>
+			</div>
+			<p class="ft_margin">有任何問題，歡迎來信詢問。</p>
+			<div class="ft_mail">
+              <a href="mailto:ilovehappyjuice1020@gmail.com.tw">ilovehappyjuice1020@gmail.com.tw</a>
+              <br><br>
+              <a href="mailto:amber041489@gmail.com.tw">amber041489@gmail.com.tw</a>
+              <br><br>
+              <a href="mailto:like6925@gmail.com.tw">like6925@gmail.com.tw</a>
+              </div>
+		</div>
+	<br>
+      <p class="ft_copy">Copyright ©2020 EU, LW ne fait rien corporation. all rights reserved</p>
+	</div>
+</footer>
+	<!--side bar-->
+
+	<div class="li_sideBar sideHide" id="sideBar">
+		<ul>
+			<li><a href="#fastFashion" id="fast">Fast Fashion.</a></li>
+			<li><a href="#slowFashion" id="slow">Slow Fashion.</a></li>
+			<li><a href="#spiritFashion" id="spirit">Our Spirit.</a></li>
+			<li><a href="#p4" id="about" style="color: #717273;">About Us.</a></li>
+		</ul>		
+	</div>
+	<!-- icon bar -->
+	<div id="icon_bar" class="iconHide">
+		<div class="card">
+		<a href="https://www.facebook.com/caigezhuanyebinlangtan/"><img src="p_fb0.png"><img src="p_fb.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="https://www.instagram.com/loser__dogs3.0/"><img src="p_ins0.png"><img src="p_ins.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="https://twitter.com/realdonaldtrump"><img src="p_twitter0.png"><img src="p_twitter.png" class="icon_hover"></a>
+		</div>
+		<div class="card">
+		<a href="https://www.youtube.com/channel/UCQd3V4gv_lcLX9SpIVW3wmw"><img src="p_whatapps0.png"><img src="p_whatapps.png" class="icon_hover"></a>
+		</div>
+	</div>	
+</body>
+<!--get external javascript-->
+<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="sideBar.js"></script>
+<!--modal controller-->
+<script type="text/javascript" src="modal.js"></script>
+<!--get aos js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+</html>
