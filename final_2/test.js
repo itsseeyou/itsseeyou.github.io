@@ -2,7 +2,7 @@
 $(function() {
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 695)  {          /* 要滑動到選單的距離 */
+    if ($(this).scrollTop() > 600)  {          /* 要滑動到選單的距離 */
        $('#navBar').removeClass('navHide');  /* show navBar */
        $('#icon_bar').removeClass('iconHide'); 
     

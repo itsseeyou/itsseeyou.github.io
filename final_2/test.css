@@ -6,7 +6,7 @@
 body{
 	margin:0;
 	overflow-x: hidden;
-	/*background-image: url("image_1.png");*/
+	background-image: url("image_1.png");
 
 }
 a{
@@ -14,6 +14,14 @@ a{
 }
 a:hover{
 	text-decoration: none;
+}
+@font-face {
+	font-family: pageTitle;
+	src: url("Playlist Script.otf");
+}
+@font-face {
+	font-family: Dosis;
+	src: url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 }
 /*section*/
 section{
@@ -47,12 +55,12 @@ section{
 }
 /*字體*/
 h2,p{
-	font-family: 'Monotype Corsiva',' HK Grotesk Bold';
+	font-family:'Dosis';
 	color: #717273;
 	margin: 0;
 }
 p{
-	letter-spacing: 2px;
+	letter-spacing: .05em;
 }
 .pageTitle{
 	font-family: 'pageTitle';
@@ -68,10 +76,7 @@ p{
 .content_eng{
 	font-family: "Dosis";
 }
-@font-face {
-  font-family: pageTitle;
-  src: url("Playlist Script.otf");
-}
+
 .hp_word{
 	position: absolute;
     top: 33%;
@@ -92,8 +97,8 @@ p{
 	overflow-y: hidden;
 	padding: 20px;
 	background-image: url("image_1.png");
-	text-align: center;/*讓字水平置中*/
-	font-size: larger;/*讓字垂直置中*/
+	text-align: center;
+	font-size: larger;
 }
 /*讓navBar固定*/
 .navHide,.iconHide{
@@ -197,10 +202,10 @@ ul li{
 /*homepage*/
 .homePage {
 	position: relative;
-	height: 720px;
+	height: 100vh;
 
 }
-/*c8..要有更好的way 讓照片比例大小剛剛好:))*/
+
 .p_hp{
 	height: 100%;
 	width: 100%;
@@ -238,7 +243,7 @@ ul li{
 /*containers for ff*/
 .container1{/*段落大標*/
 	padding: 35px 70px;
-	/*margin-top: 22px;*/
+	padding-right: 0;
 }
 .container2{/*左邊圖*/
 	padding: 0px 70px;
@@ -258,7 +263,7 @@ ul li{
     height: 90%;
     padding: 10% 0 0 0;
 }
-.
+
 
 /*讓文字置中*/
 .plz{
@@ -290,7 +295,7 @@ ul li{
 	font-size: 20;
 	line-height: 1.5;
 	height: 190px;
-	overflow-y: auto;/*叫出scroll bar*/
+	overflow-y: auto;
 }
 .content_influence_c{
 	padding: 0px 100px;
@@ -309,7 +314,7 @@ ul li{
 	overflow-y: auto;
 }
 .content_influence{
-	padding-right: 15px; /*讓字不要黏著scroll bar*/
+	padding-right: 15px; 
 }
 
 /*containers for sf*/
@@ -342,7 +347,7 @@ ul li{
 	display: flex;
     align-items: center;
     height: 80%;
-    padding: 120px 100px 0 100px;
+    margin: 120px 100px 0 100px;
     font-weight: 1000;
     font-size: 20;
     line-height: 2;
@@ -392,6 +397,7 @@ ul li{
 }
 .picture_s_w{
 	color: #4C2B36;
+	text-align: center;
 }
 #mustHave{
 	cursor: pointer;
@@ -631,10 +637,11 @@ label.active {
    }
 /*container*/
 .container_spirit{
-	position: relative;
-	width: 46%;
-	left:  27%;
-	transform: translateY(-60px);
+	display: flex;
+	margin: auto;
+	width: 700px;
+	height: 500px;
+	background: url('p_spirit.svg') no-repeat center center;
 }
 .background_spirit{
 	position: absolute;
@@ -643,10 +650,8 @@ label.active {
 	z-index: -1;
 }
 .content_spirit{
-	position: absolute;
-    transform: translateY(82%);
-    left: 12%;
-   }
+	margin: auto;
+}
 
 svg a{
 	display: none;
@@ -733,9 +738,12 @@ svg a{
 
 .ft_copy{
 	position: absolute;
-	bottom: 0px;
-	left: 34%;
-	font-weight: 1000;
+    bottom: 10px;
+    width: 530px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 1000;
 }
 .ft_fkoff{
 	margin-top: 20px;
@@ -771,6 +779,42 @@ svg a{
 .About-Us-Image{
 	padding: 20px 0;
 }
-.ft_gohellplz{
+.ft_plz{
 	font-weight: 1000;
+}
+
+@media screen and (max-width:1024px) { 
+	.pageTitle{
+		font-size: 60px;
+	}
+	.kfc{
+		font-size: 40px;
+	}
+	.container2 img{
+		padding: 10%;
+	}
+	.container3{
+
+	}
+	.what_sf_pic {
+    height: 70%;
+    transform: translateY(95px);
+    margin: auto;
+    margin-left: 0;
+	}
+	.container_auu{
+		margin: 0 28% 0 5%;
+	}
+	.content_s1 {
+		margin: 120px 50px 0 100px;
+	}
+	.ff_impact{
+		padding: 50px 50px;
+		padding-left: 20px;
+	}
+	.what_sf_pic {
+		height: 70%;
+		transform: translateY(95px);
+		margin-left: 0;
+	}
 }
